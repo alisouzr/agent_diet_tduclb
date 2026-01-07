@@ -42,7 +42,7 @@ if api_key:
             retriever = vectorstore.as_retriever()
 
             # Configurar a IA
-            llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
+            llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
             template = "Use o contexto para responder: {context}\nPergunta: {question}"
             prompt = ChatPromptTemplate.from_template(template)
             
